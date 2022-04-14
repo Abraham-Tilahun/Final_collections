@@ -1,0 +1,55 @@
+	#menu{
+	background-color:#e6e6e6;
+
+	width:100%px;
+	height:100px;
+	padding-top:0px;
+	color:red;
+	}
+	.header_buttons{
+	background-color:#339966;
+	color: #fff;
+	padding: 20px 25px;
+	border: 0px solid #fff;
+	 text-decoration: none;
+	}
+	
+	.header_buttons:hover{
+	background-color:white;
+	color:black;
+	}
+		
+	#lpara{
+		font-size:20px;
+		font-weight:bold;
+		background-color:#1a8cff;
+
+	}
+	#divider{
+		background-color:#003300;
+		height:9px;
+		width:100%px;	
+	}
+	#news{
+	background-color:#b3b3ff;  
+	width:24%;
+	height:600px;
+	float:left;
+	overflow-y:scroll;
+	padding:2px 3px;
+	}
+	#content{
+		
+	background-color:#00ffcc;
+	
+	width:75%px;
+	height:600px;
+	overflow-x:scroll;
+	}
+	#foot{
+	 background-color:#737373;
+	 width:100%px;
+	 height:30px;	 
+	}
+
+    

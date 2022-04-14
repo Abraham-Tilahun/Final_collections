@@ -1,0 +1,227 @@
+ /*===================================================  Header space  service with content------------------------------------------------------------ */
+                   * 
+
+                                    {
+                margin: 0px;
+                padding: 0px;
+                   }
+ /* ====================================== =============body background and font_size ============================================================*/
+                  body {
+	                  background: #ffffff url(images/back.gif) repeat-x;
+                      font-family: Arial, Helvetica, sans-serif;
+	                  font-size: 13px;
+	                  color: #A4E4F5;
+                     }
+/* ========================================================= input text area color and font =========================================================================== */
+                   input, textarea {
+	                        background: white;
+	                        border: 1px solid black;
+	                        font:  15px Arial, Helvetica, sans-serif;
+                            color: black;
+                          }
+				    td{
+                            color: Black
+                          }
+					th{
+                            color: Black;
+                          }
+/* ============================================================== Header one ======================================================================================*/
+                     #header {
+                             margin-left:0px;
+	                         width: 100%;
+                             height: 282px;
+	                         /* background: url(images/j.png) no-repeat; */
+                             }
+/*================================================================= Header two ========================================================================================= */					  
+                    #logo {
+                          width: 100%;
+                          height: 100%;
+                          background: url(images/header.png) no-repeat;
+                        }
+
+  /* ================================================================= menu content list =====================================================================*/
+
+                         #menu li {
+	                        display: inline;
+                             }
+/* ================================================================= menu content list on header =====================================================================*/
+                         #menu a {
+	                          float: left;
+	                          width: 100px;
+	                          height: 30px;
+	                          margin: 10px 0 0 5px;
+	                          padding: 14px 0 0 0;
+	                          text-decoration: none;
+                              text-align: center;
+	                          letter-spacing: -1px;
+	                          font-size: 1.1em;
+	                          font-weight: bold;
+	                          color: black;
+	                         /* background: url(images/untitled.png) no-repeat;*/
+                                   }
+  /* ================================================================= menu content images =====================================================================*/
+                             #menu {
+	                           background: url(images/bbb.png) no-repeat;
+	                           width:1000px%;
+	                           height:60px;
+                                 }
+ /* ================================================================= menu content hover =====================================================================*/
+                     #menu li a:hover 
+							{
+                             width: 100px;
+	                          height: 30px;
+	                         background: url(images/back_all.gif);
+							}
+						.current
+							{
+                             width: 100px;
+	                          height: 30px;
+	                         background: url(images/back_all.gif);
+							}
+							
+ /* ================================================================= page size and contents of service =====================================================================*/
+
+                            #page {
+	                         width: 1036px;
+	                         background: #ffffff url(images/page_back.gif) repeat-y;
+	                         margin: 0 auto;
+	                         margin-top: 14px;
+							 
+                               }
+/* ================================================================= contents with backgroundcolor =====================================================================*/
+
+                            #content {
+								float: left;
+								width: 532px;
+								margin-left: 16px;
+								background: none repeat scroll 0% 0% rgba(80, 180, 188, 1);
+							}
+/* =================================================================  contents with color =====================================================================*/
+
+                            #content .post ul, #content .post ol
+                                                             {
+                                   margin-left: 0px;
+                               }
+
+                             .post {
+	                              margin-bottom: 15px;
+	                              padding: 8px;
+	                              color: black;
+                                  }
+
+                              .post a {
+	                              color: black;
+                                    }
+
+                              .post a:hover {
+	                           color: #FFFFFF;
+                                    }
+
+/* =================================================================  Sidebars left to right =====================================================================*/
+
+                               .sidebar {
+	                                 float: left;
+	                                 width: 222px;
+									 weight:20
+	                                 margin-top: 10px;
+	                                 color: black;
+									 font-size: 1.1em;
+	                                 font-weight: bold;
+
+                                     }
+
+                               .sidebar ul {
+	                                  margin: 10;
+	                                  padding: 0;
+	                                  list-style: none;
+	                                 line-height: normal;
+                                     }
+/* ================================================================= Sidebars with contents =====================================================================*/					 
+                                .sidebar li {
+	                                 padding: 15px 0 6px 20px;
+                                       }
+
+                                 .sidebar a {
+                                      	text-decoration: none;
+	                                     color:black;
+	                                     font-size: 12px;
+	
+                                          }
+                                  .sidebar a:hover {
+								  background: url(images/back_all.gif);
+                                     	color: blue;
+                                     	text-decoration: underline;
+										
+                                            }
+
+                                   .sidebar h2 {
+	                                      padding-top: 10px;
+	                                      color: black;
+	                                      background: url(images/menu.gif) no-repeat;
+	                                      height: 33px;
+                                          padding-left: 20px;
+	                                      font-size: 16px;
+	                                      font-weight: bold;
+                                          }
+ /* ================================================================= Left Sidebar =====================================================================*/					
+
+                                         #leftbar 
+										 {
+                                           margin-left: 13px;
+                                         }
+ /* ================================================================= Right Sidebar =====================================================================*/	
+
+                                         #rightbar
+										     {
+                                            margin-left: 18px;
+                                           }
+/* ================================================================= leftbar back and Rightbar  background color =====================================================================*/
+                                         #leftbar .back, #rightbar .back
+                                                                                        {
+                                                background: url(images/page_back.gif) repeat-y;
+                                                padding: 15px;
+                                             }
+/* ================================================================= leftbar bottom and rightbar bottom =====================================================================*/
+                                          #leftbar .bottom, #rightbar .bottom
+                                                                                            {
+                                               /* background: url(images/bottom.gif) no-repeat;*/
+                                                height: 6px;
+                                                width: 221px;
+                                                margin-bottom: 10px;
+                                                color:blue;
+                                              }
+  
+
+
+                                           
+/* ================================================================= footer  =====================================================================*/
+
+
+                                          #footer {
+	                                          clear: both;
+	                                          padding-top: 10px;
+	                                          height: 30px;
+	                                          background: url(images/menu.gif) repeat-x;
+                                                      }
+
+                                           #footer p {
+                                            	text-align: center;
+                                              	font-size: smaller;
+                                               	color: Black;
+                                                }
+
+                                            #footer a {
+                                             	color: black;
+                                                     }
+                                                media="screen"
+                                                     * {
+                                                   margin: 0px;
+                                                   padding: 100px;
+                                                   background-color: black;
+
+                                                     }
+										form
+										{
+                                           height:510px;										
+										}
+ /* ================================================================= end end end  =====================================================================*/

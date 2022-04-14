@@ -1,0 +1,36 @@
+body{
+
+    
+    font-size: 13px;
+	font-family:arial;
+}
+#wrapper{
+	margin:0 auto;
+	width:750px;
+}
+.clearfix{
+	clear:both;
+}
+#note{
+	background-color: #fff;
+	padding:10px;
+	margin-bottom:10px;
+}
+#content{
+}
+#productlist{
+
+	padding:10px;
+	float:left;
+	width:400px;
+}
+#orderlist{
+	background-color: #fff;
+	padding:10px;
+	float:left;
+	width:300px;
+	
+}
+.pngfix{
+	padding:5px;
+}

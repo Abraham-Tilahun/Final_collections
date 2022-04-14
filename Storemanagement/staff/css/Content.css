@@ -1,0 +1,283 @@
+body {
+background:#33CCFF;
+background:url(../images/bg.jpg) top center repeat;
+
+  font-family: "Times New Roman", Times, serif;
+  font-family:16px;
+}
+
+td {
+	font-family: "Times New Roman", Times, serif;
+	font-family:16px;
+}
+
+th {
+	font-family: "Times New Roman", Times, serif;
+}
+
+p{
+font-family:"Times New Roman", Times, serif;
+font-size:16px;
+font-style:normal;
+}
+#Content{
+background-color:#DBDBDB;
+width:1000px;
+margin:0;
+padding:0;
+float:center;
+border:#5F5F5F;
+}
+#FoodCatagory {
+	width: 220px;
+	border-style: solid solid none solid;
+	border-color: #677D92;
+	border-size: 1px;
+	border-width: 1px;
+	margin: 0;
+	padding:0;
+	float:left;
+	}
+	
+#FoodCatagory li a {
+	height: 30px;
+	font-size:18px;
+	text-decoration: none;
+	font-weight:600;
+	}
+	
+#FoodCatagory li a:link, #FoodCatagory li a:visited {
+	color:#330066;
+	display: block;
+	background-color:#993399;
+	padding: 8px 0 0 10px;
+	margin:0;
+	}
+	
+#FoodCatagory li a:hover {
+	color: #283A50;
+	background:#FF3366;
+	padding: 8px 0 0 10px;
+	margin:0;
+	transition:background 0.5s linear 0s,color 0.5s linear 0s;
+	}
+	
+#FoodCatagory li a:active {
+	color: #283A50;
+	background: url(menu.gif) 0 -64px;
+	padding: 8px 0 0 10px;
+	}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+#h1{
+font-size:24px;
+font-family:"Times New Roman", Times, serif;
+background-color:#9933FF;
+height:30px;
+font-weight:bold;
+}
+.details{
+float:right;
+width:760px;
+text-align:left;
+padding:5px;
+margin:0;
+font-size:16px;
+}
+#welcome{
+font-family:"Times New Roman", Times, serif;
+font-size:36px;
+background-color:#CC33CC;
+text-align:center;
+font-weight:bold;
+height:30px;
+padding-top:14px;
+}
+#news{
+font-family:"Times New Roman", Times, serif;
+font-size:36px;
+background-color:#CC33CC;
+text-align:center;
+font-weight:bold;
+height:30px;
+padding-top:14px;
+}
+#services{
+font-family:"Times New Roman", Times, serif;
+font-size:16px;
+list-style-image:url(../../New/ethiostar/website/images/arrow.gif);
+margin-left:20px;
+font-style:italic;
+}
+.wrapper {
+	width:100%;
+	overflow:hidden;
+	}
+#ContactForm {
+	margin-top:-10px;
+	line-height:29px;
+	font-weight:bold;
+	width:638px;
+	float:left;
+	}
+#ContactForm a {
+	margin-left:10px;
+	float:right;
+	width:86px;
+	text-align:center;
+	padding:0;
+}
+#ContactForm .input {
+	float:right;
+	margin-right:222px;
+	width:335px;
+	height:17px;
+	border:1px solid #dcdcdc;
+	background:#fff;
+	padding:5px;
+	margin-bottom:6px;
+	color:#323232;
+	font:"Times New Roman", Times, serif;
+}
+#ContactForm textarea {
+	overflow:auto;
+	margin-right:222px;
+	float:right;
+	width:334px;
+	height:157px;
+	border:1px solid #dcdcdc;
+	background:#fff;
+	padding:5px;
+	margin-bottom:16px;
+	color:#323232;
+	font:"Times New Roman", Times, serif;
+}
+.button {
+	display:inline-block;
+	font-size:16px;
+	color:#fff;
+	background:#f09e2f;
+	line-height:35px;
+	padding:0 16px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	position:relative;
+	font-weight:600;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.button:hover {
+	background:#8cbd20;
+}
+h1 {
+	font-size:30px;
+	text-transform:uppercase;
+	font-weight:600;
+	color:#3333FF;
+	line-height:32px;
+	padding:2px 0 13px 80px;
+}
+#buttons{
+float:left;
+padding:0 0 0 130px;
+}
+#contacts{
+width:450px; 
+height:380px;
+border-radius:10px;
+border:1px solid #686868;
+padding:0 0 0 30px;
+float:left;
+margin:0 0 0 0;
+}
+font{
+font-size:16px;
+}
+#title{
+font-size:20px;
+}
+input{
+font-size:16px;
+font-family:times;
+}
+Select{
+font-size:16px;
+font-family:times;
+}
+.wrong
+{
+	font-family:"Times New Roman", Times, serif;
+	font-size:18px;
+	color:#FF0000;
+	text-align:left;
+	font-weight:bold;
+	padding:5px 5px 5px 25px;
+	border:#FF0000 thin solid;
+	background:#FFECEC url('../images/wrong.png') left center no-repeat;
+	margin-top:0;
+}
+.view1{
+overflow: auto;
+width: 764px; 
+height: 600px;
+color:#000000;
+float:right;
+font-family:Arial, Helvetica, sans-serif;
+}
+#menu-bar1 a {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 14px;
+  color:#eeeeee;
+  text-decoration: none;
+  display: block; 
+}
+#menu-bar1 a:hover {
+  background:url('../images1/widgets-right-bg.png'); 
+  border-radius: 0px;
+}
+
+.templatemo_pizza_box {
+	width: 20px;
+	height: 90px;
+	margin: 90px 70px 90px 70px;
+	float:left;
+	
+}
+.templatemo_pizza_box img{
+	margin: -80px -20px -80px -20px;
+	
+}
+
+.templatemo_pizza_box .textbox{
+text-align:left;
+	margin: 80px 0px 0px 0px;
+	font-size: 16px;
+	width:150px;
+	padding-left:0;
+}
+#titles{
+float:left; background-color:#336699; margin-top:0;
+ border-radius:5px; font-family:Times New Roman, Times, serif; 
+ color:#000000;  padding:10px 5px 5px 5px;  height:25px; width:300px;
+ margin-left:80px;
+}
+a{
+font-size:18px;
+color:#03F;
+font-size:14px;
+}
+a:link{
+text-decoration:none;
+font-size:18px;
+}
+a:visited{
+text-decoration:none;
+font-size:16px;
+color:#03F;
+}

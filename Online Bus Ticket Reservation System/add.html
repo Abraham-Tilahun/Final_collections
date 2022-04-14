@@ -1,0 +1,101 @@
+
+		<!DOCTYPE html>
+		<html> 
+		<head>
+	<!-- button layout source=w3scoohls.com -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.btn {
+		background-color:#ff9900;
+		border: none;
+		color: white;
+		padding: 12px 16px;
+		font-size: 16px;
+		cursor: pointer;
+		}
+		.btn:hover {
+		background-color: RoyalBlue;
+		}
+		.dv{
+		background-color:#d1e0e0;
+		align:center;
+		overflow:scroll;
+		}
+		.txt{
+		font-size:20px;
+		}
+		</style>
+
+		<meta charset="utf-8">		
+		<title>Add-bus</title> 
+		</head> 
+		<body>
+		<center>
+		<div class="dv" >
+	<button class="btn"><i class="fa fa-home"><a href="index.php" ></i> Home</a></button>
+	<a href="busdelete.html"><button><h3>Delete Bus</h3></button></a>
+	<a href="checkinAdmin.html"><button><h3>Check</h3></button></a>
+	<a href="seeRegisters.php"><button><h3>Users<h3></button></a>
+	
+	<h1 style="text-align:center"><i>Ethio online bus ticket</i></h1>
+	<h2 style="text-align:center"><i>Bus Adding Form:</i></h2>
+	<form class="box" method="post" action="add.php">
+	<b>Bus_Name:</b><input class="txt" type="text" name="bus_name"placeholder
+	="Enter name of the bus"><br/><br/>
+	Bus_ID:<input class="txt"  type="text"name="Bus_id" placeholder
+	="Enter side-number"><br/><br/>
+	From:<select class="txt"  name="from" required>
+		<option>Adiss Abeba</option>
+		<option>Bahirdar</option>
+		<option>Dessie</option>
+		<option>Mekelle</option>
+		<option>Axum</option>
+		<option>Adigrat</option>
+		<option>Adama</option>
+		<option>Semera</option>
+		<option>Dire Dewa</option>
+		<option>Jigiga</option>
+		<option>Jimma</option>
+		<option>Harar</option>
+		<option>Hawassa</option>
+		<option>Asosa</option>
+		<option>Shashemene</option>
+		<option>Gonder</option>	 
+		<option>Lalibela</option>	 	 	 	 
+		<option>Arbaminch</option>
+		<option>Woldiya</option>
+		</select><br/><br/>
+		To:<select class="txt"  name="to" required>
+		<option>Gonder</option>
+		<option>Mekelle</option>
+		<option>Axum</option>
+		<option>Adigrat</option>
+		<option>Adama</option>
+		<option>Semera</option>
+		<option>Dire Dewa</option>
+		<option>Jigiga</option>
+		<option>Jimma</option>
+		<option>Harar</option>
+		<option>Hawassa</option>
+		<option>Asosa</option>
+		<option>Shashemene</option>
+		<option>Bahrdar</option>
+		<option>Adiss Abeba</option>	 
+		<option>Lalibela</option>	 	 	 	 
+		<option>Dessie</option>
+		<option>Woldiya</option>
+		</select><br/><br/>
+	Departure-date<input class="txt" type="date" placeholder="Select Depart" name="date"required><br/><br/>
+	Price:<input class="txt"  type="number" name="fare" placeholder="Amount in Birr"required><br/><br/>
+	Kilo-Meter:<input class="txt"  type="number" name="meter" placeholder="kilometer"required><br/><br/>
+	Numebr-of Seat:<input type="number" name="nseat" placeholder="Seats" class="txt" required><br/><br/>
+	Numebr-of Avaliable seats:<input type="number" placeholder="Avaliable seats" name="Avaliable_seat" class="txt" required><br/><br/>
+		<input type="submit" value="ADD" class="btn"><br/><br/>
+		<input type="reset" value="Reset"class="btn">
+		</center>
+		</div>
+		</form>
+		</body> 
+		</html> 

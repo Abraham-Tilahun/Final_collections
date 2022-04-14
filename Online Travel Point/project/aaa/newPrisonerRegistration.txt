@@ -1,0 +1,202 @@
+<html>
+   <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title> NEW PRISONER REGISTERATION FORM</title>
+		<link href="styles.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+   <body>
+		<div id="main">
+			<!-- start header -->
+            <div id="header">
+            <br/><br/><br/><br/><br/><br/><br/>
+				<div id="logo">
+				</div>
+				<!--Header end -->
+			</div>
+			<!-- end header -->
+			<div id="menu">
+				<ul>
+					<li><a href="Home.html"title="" style="margin-left:155px;">Home</a></li> 
+					<li><a href="Aboutas.php" title="">About us</a></li>
+					<li><a href="contactus.html" title="">contact us</a>
+					<li><a href="signUp.php" title="">Sign Up</a></li>
+					<!--<li><a href="login.php" title="">Log In</a></li>--->
+					<li><a href="logout.php" title="">Logout</a></li>
+				</ul>
+		    </div><br/>
+<!-- start page -->
+		<div id="page">
+	<!-- start leftbar -->
+	<div id="leftbar" class="sidebar">
+			<h2>REGISTRATION</h2>
+			 <div class="back">
+
+				<ul>
+ 				    <li><a href="prisonregistor.php">Register New prisoner</a></li>
+					<li><a href="Regvisitor.html">Register Visitor</a></li>
+					<li><a href="tran.php">Transfer request</a></li>
+					<li><a href="conditionalReleaseCase.php">conditional release case</a></li>
+				</ul>
+			</div>
+			<div class="bottom">
+			</div>
+				<!--<div class="bottom"></div>-->
+				<!--<div class="bottom"></div>-->
+				<h2>View</h2>
+			<div class="back">
+				<ul>
+					 <li><a href="viewSchedule.html">View Schduling time</a></li>
+					 <li> <a href="viewPrisonerInformation.php"> View prisoner information</a></li>
+					 <li><a href="viewTransfer.php" title="">ViewTransferRequest</a></li>
+					 <li><a href="viewCondRelease.php" title="">ViewConditionalReleaseCase</a></li>
+				</ul>
+			</div>
+				<div class="bottom"></div>
+	</div>
+	<!-- end leftbar -->
+	<!-- start content -->
+	
+	    <div id="content">
+		<div class="post">
+
+           
+    <form  type="multipart/form-data" name="myForm" action="registraiton.php" method="post" onsubmit="return (Register());" 
+					<h2>PRISONER REGISTERATION FORM </h2><br><br>
+		<table style color:black;>
+					Select Image:<input type="file" name="file" accept="image/*">
+				<tr>
+					<p><td>First name:</td><td><input type="text" name="fname" size="18" pattern="[A-Za-z]+"
+					oninvalid="setCustomValidity('First Name is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+					<p><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateOfEntrance:</td><td><input type="text" name="Date" size="18" pattern="[0-9]+/[0-9]+/[0-9]+"
+					oninvalid="setCustomValidity('Date is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td><br />
+				</tr>
+			 
+				<tr>
+					<p><td>lastName:</td><td><input type="text" name="lname" size="18" pattern="[A-Za-z]+"
+					oninvalid="setCustomValidity('Last Name is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp; prisonerId :</td><td><input type="text" name="prid" size="18" pattern="[A-Za-z]+[0-9]*"
+					oninvalid="setCustomValidity('Prison Id is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td><td>
+				</tr>
+				<tr>				
+					<td>City:</td><td><input type="text" name="City" size="18" pattern="[A-Za-z]+"
+					oninvalid="setCustomValidity('Home town is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+					<p><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; dateOfRelease:</td><td><input type="text" name="date of release" size="18" pattern="[0-9]+/[0-9]+/[0-9]+"
+					oninvalid="setCustomValidity('Date is required')" onchange="try{setCustomValidity('')} catch(e){}"required="required"></td>
+				</tr>
+				
+		        <tr>
+					<td>Region:      
+					<td>
+						<SELECT name="region">Region
+							<OPTION value="Tgray">Tgray
+							<OPTION value="afar">Afar
+							<OPTION value="amhara">Amhara
+							<OPTION value="Oromiya">Oromiya
+							<OPTION value="Somalia">Somalia
+							<OPTION value="benishangul gumiz">Benishangul gumz
+							<OPTION value="SNNPPR">SNNPPR
+							<OPTION value="Gambela">Gambela
+							<OPTION value="Hareri">Hareri
+						</select>
+					</td>
+                </tr>
+				
+				<tr>
+					<p><td>&nbsp;&nbsp;&nbsp;&nbsp; bedNumber:</td><td><input type="text" name="bed number" size="18"
+					oninvalid="setCustomValidity('court  is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+				</tr>
+				
+				<tr>
+					<p><td>faceColor:</td><td><input type="text" name="faceColor" size="18"
+					oninvalid="setCustomValidity('court  is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+					<p><td>&nbsp;&nbsp;&nbsp;&nbsp; eyeColor:</td><td><input type="text" name="eyeColor" size="18"
+					oninvalid="setCustomValidity('court  is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+				</tr>
+				
+				<tr>
+					<p><td>DateOf<br />Conviction:</td><td><input type="text" name="DateOfConviction" size="18" pattern="[0-9]+/[0-9]+/[0-9]+"
+					oninvalid="setCustomValidity('date is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp; OffenceType:</td><td><input type="text" name="offty" size="18" 
+					oninvalid="setCustomValidity('offence type is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+				</tr>
+				
+				<tr>
+					<p><td> hairColor:</td><td><input type="text" name="hairColor" size="18"
+					oninvalid="setCustomValidity('court  is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+					<p><td>&nbsp;&nbsp;&nbsp;&nbsp; Weight:</td><td><input type="text" name="weight" size="18"
+					oninvalid="setCustomValidity('court  is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+				</tr>
+				
+				<tr>
+					<p><td> height:</td><td><input type="text" name="height" size="18"
+					oninvalid="setCustomValidity('court  is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+				</tr>
+				   
+				<tr>
+				    <p><td>CourtOf<br> Conviction:</td><td><input type="text" name="courtc" size="18"	
+				    oninvalid="setCustomValidity('cort of conviction is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td>
+			        <td>&nbsp;&nbsp;&nbsp;&nbsp;Address:</td><td><input type="text" name="Address" size="18"
+			        oninvalid="setCustomValidity('Adress type is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td></td></p>
+				</tr>
+		        
+				<tr>
+				   <td>birthDate:</td><td><input type="text" name="birth date" size="18"  pattern="[1-9]+[1-9]+[0]*" 
+				   oninvalid="setCustomValidity('age is required')" onchange="try{setCustomValidity('')} catch(e){}" required="required"></td></p>
+			    </tr>
+		
+				<tr>	
+					<td>Sex:</td>
+						<td>
+					<SELECT name="sex">
+					<OPTION value="male">Male
+					<OPTION value="female">Female
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td align="right"><input type="submit" value="Submit" style ></a></td>
+					<td align="right"><input type="button" value="Reset"></td><br>
+				</tr>
+	
+		</table>
+	</form>		
+		</div>
+	 </div>
+	<!-- end content -->
+	<!-- start rightbar -->
+	<div id="rightbar" class="sidebar">
+				
+				<h2>Operation</h2>
+				 <div class="back">
+				<ul>
+					<!--<li><a href="search1.html">Update PrisonerInformation</a></li>-->
+					<li><a href="search1.php">search prisoners</a></li>
+					<li><a href="updateInfo.php" title="">Update Info</a></li>
+					<li><a href="changePassword.php" title="">Change Password</a></li>
+					
+				</ul>
+	</div>
+				 <div class="bottom"></div>	
+<h2>SERVICE</h2>
+                 
+				 <div class="back">
+				<ul>
+					<li><a href="#">JobOpportunity</a></li>
+					<!--<li><a href="#">Update</a></li>-->
+					
+				</ul>
+				</div>	
+			
+				
+	<!-- end rightbar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+ <div id="footer">
+  <p>Copyright ; 2015  <a href="#">Bair Dar prison administration </a> </p>
+
+<!--End of notice --></p>
+
+</div>
+</div>
+</body>

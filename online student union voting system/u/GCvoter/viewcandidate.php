@@ -1,0 +1,119 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])&&isset($_SESSION['password']))
+	{
+include("../Database/connection.php");
+?>
+<html>
+<link  href="../css/allcss.css" rel="stylesheet" type="text/css"/>
+<head>
+<title>Online Stuidenet Union Voting System</title>
+<style>
+
+#content
+{
+	background-color: white;
+	width: 80%;
+	height: 600px;
+	margin-left: 18%;
+	margin-top: 0%;
+	overflow-x: scroll;
+	overflow-y: zcroll;
+}
+</style>
+</head>
+<body>
+<div id="container">
+		<div id="header">
+		<?php
+		include("../header.php");
+		?>
+		</div>
+		<div id="menu">
+		<?php
+include("../GCvoter/votermenu.php");
+		?>
+	</div>
+
+				<div id="leftside">
+					<div id="applyside">
+						<?php
+							include("../GCvoter/votersidemenu.php");
+					   ?>	
+					</div>    
+				</div>
+				<div id="content">
+		<?php
+$result=mysql_query("select * from requesttable WHERE requesttype='Candidate' and campus='GC'");  
+if(mysql_num_rows($result)>0)
+{
+	?>
+	<table class="data-table" style="margin-left: 15px;margin-right: 15px;margin-top: 15px;">
+		<caption class="title">Cadidates Detail Information</caption>
+		<thead style="height: 20px;">
+			<tr>
+			    <th>N<u>O</u></th>
+				<th>ID_Number</th>
+				<th>First_Name</th>
+				<th>Last_Name</th>
+				<th>Sex</th>
+				<th>faculity</th>
+				<th>Department</th>
+				<th>Year</th>
+				<th>CGPA</th>
+				<th>campus</th>
+				<th>information</th>
+			</tr>
+		</thead>
+		<?php
+		$nuber=1;
+		while($row=mysql_fetch_array($result))
+				{
+					
+					echo '<tr>
+					<td>'.$nuber.'</td>
+					<td>'.$row['student_ID'].'</td>
+					<td>'.$row['fname'].'</td>
+					<td>'.$row['lname'].'</td>
+					<td>'.$row['sex'].'</td>
+					<td>'.$row['faculity'].'</td>
+					<td>'.$row['deparment'].'</td>
+					<td>'.$row['year'].'</td>
+					<td>'.$row['cgpa'].'</td>
+					<td>'.$row['campus'].'</td>
+					<td>'.$row['information'].'</td>
+				</tr>';
+				$nuber++;
+		}
+		
+		?>
+	</table>
+	<?php
+	}
+	else
+	print "<font color=red><b>No New Student Data is found</b></font>";
+	?>
+		    </div>
+		    
+		<div id="footer">
+			<?php
+			include("../GCvoter/footer.php");
+			?>
+			<a name="bottom"></a>
+	</div>
+	<?php
+	}
+	else
+	{
+	?>	
+	<script>
+  alert('You Are Not Logged In !! Please Login to access this page');
+  alert(window.location='../home.php');
+ </script>
+ <?php
+	}
+   ?>
+	
+	</div>
+</body>
+</html>
